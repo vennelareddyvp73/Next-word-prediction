@@ -2,7 +2,7 @@
 
 A neural network model that predicts the next word in a sequence using LSTM (Long Short-Term Memory) networks, trained on Franz Kafka's "The Metamorphosis".
 
-## 📖 Overview
+## Overview
 
 This project implements a deep learning approach to natural language processing by building a model that can predict the next word in a sentence based on the previous words. The LSTM neural network learns patterns and relationships in text to generate contextually appropriate word predictions.
 
@@ -12,7 +12,7 @@ This project implements a deep learning approach to natural language processing 
 - Word prediction functionality
 - Training on classic literature text
 
-## 🛠️ Requirements
+## Requirements
 
 - Python 3.x
 - TensorFlow/Keras
@@ -20,7 +20,7 @@ This project implements a deep learning approach to natural language processing 
 - Pickle (for saving tokenizer)
 
 
-## 🏗️ Model Architecture
+##  Model Architecture
 
 The neural network consists of the following layers:
 
@@ -38,7 +38,7 @@ The neural network consists of the following layers:
 - Embedding Dimension: 10
 - Total Parameters: ~28M parameters
 
-## 📊 Dataset Information
+##  Dataset Information
 
 - **Source**: Franz Kafka's "The Metamorphosis"
 - **Preprocessing**: 
@@ -48,7 +48,7 @@ The neural network consists of the following layers:
 - **Training Sequences**: 3,879 sequences
 - **Unique Words**: 2,617 words
 
-## 📈 Training Results
+##  Training Results
 
 The model shows excellent learning progression:
 
@@ -60,7 +60,7 @@ Epoch 20/20 - Loss: 0.1033
 
 The loss decreases significantly from ~7.88 to ~0.10, indicating successful learning of text patterns.
 
-## 💡 Example Predictions
+##  Example Predictions
 
 ```python
 # Example predictions
@@ -69,7 +69,7 @@ predict_next_word(model, tokenizer, "what a strenuous") → "career"
 predict_next_word(model, tokenizer, "the door") → "opened"
 ```
 
-## 🔄 Future Improvements
+##  Future Improvements
 
 - Implement beam search for better predictions
 - Add temperature sampling for diverse outputs
